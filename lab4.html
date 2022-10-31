@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>#yellow{
+        background-color: yellow;
+        border: 1px solid black;
+        width: 21%;
+        transition: transform;
+    }
+    h2{
+        text-align: center;
+    }
+    #yellow:hover{
+        transform: rotate(180deg);
+    }
+    #rotate{
+        background-color: red;
+        border: 1px solid black;
+        width: 150px;
+        height: 150px;
+        margin-left: 10%;
+        transition: width 2s, height 2s, transform 2s;
+        transition-delay: 1s;
+    }
+    #rotate:hover{
+        width: 300px;
+        height: 300px;
+        transform: rotate(180deg);
+    }
+    .width{
+        width: 25%;
+    }
+    #greyscale img:hover{
+        filter: grayscale(100%);
+    }
+    #blur img:hover{
+        filter: blur(5px);
+    }
+    #opacity img:hover{
+        filter: opacity(30%);
+    }
+    #shadowtext h1{
+        margin-left: 3%;
+        text-shadow: 2px 2px 10px purple;
+    }
+    .responsive .gallery {
+        width: 22%;
+        padding: 2px;
+    }
+    @media screen and (max-width : 800px) {
+        .responsive .gallery {
+            width: 22%;
+        }
+    }
+    @media screen and (min-width: 300px) and (max-width :  801px) {
+        .responsive .gallery {
+            width: 47%;
+        }
+    }
+    @media screen and (max-width : 301px) {
+        .responsive .gallery {
+            width: 95%;
+        }
+    }
+    .gallery{
+        margin: 1px;
+        border: 1px solid black;
+        float: left;
+        width: 22%;
+        padding: 10px;
+        margin-right: 29px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .gallery img{
+        width: 100%;
+    } 
+    .desc{
+        padding: 10px;
+        text-align: center;
+    }
+    #clear{
+        clear: both;
+    }
+    #shadow{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>lab 4</title>
+</head>
+
+<body>
+    <div id="container">
+        <!-- QUESTION 1 -->
+        <div class="Q1">
+            <h2>Question#1</h2>
+            <div id="yellow">
+                <p>There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...</p>
+            </div>
+            <br><hr>
+        </div>
+        <!-- QUESTION 2 -->
+        <div class="Q2">
+            <h2>Question#2</h2>
+            <div id="rotate"></div>
+            <br><hr>
+        </div>
+
+        <!-- QUESTION 3 -->
+        <div class="Q3">
+            <h2>Question#3</h2>
+            <div id="filter">
+                <figure id="greyscale">
+                    <figcaption><h3>Greyscale:</h3></figcaption>
+                    <img class="width" src="images/diary.jpeg" alt="chick">
+                </figure>
+
+                <figure id="blur">
+                    <figcaption><h3>Blur:</h3></figcaption>
+                    <img class="width" src="images/diary.jpeg" alt="cutoo">
+                </figure>
+
+                <figure id="opacity">
+                    <figcaption><h3>Opacity:</h3></figcaption>
+                    <img class="width" src="images/diary.jpeg" alt="Daffy-Duck" >
+                </figure>
+            </div>
+            <br><hr>
+        </div>
+
+        <!-- QUESTION 4 -->
+        
+        <div class="Q4">
+            <h2>Question#4</h2>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <img class="width" src="images/diary.jpeg" alt="clouds">
+              <div class="desc">Clouds</div>
+            </div>
+            <div class="gallery">
+                <img class="width" src="images/diary.jpeg" alt="gettyimages">
+                <div class="desc">Getty Images</div>
+            </div>
+            <div class="gallery">
+                <img class="width" src="images/diary.jpeg" alt="river">
+                <div class="desc">River</div>
+            </div>
+            <div class="gallery">
+                <img class="width" src="images/diary.jpeg" alt="rock">
+                <div class="desc">Rock</div>
+                <br>
+            </div>
+        </div>
+
+    <!-- QUESTION 5 -->
+    <div class="Q5">
+        <h2>Question#5</h2>
+        <div id="shadowtext">
+            <h1>Text shadow effect!</h1>
+        </div>
+        <div id="boxshadow">
+            <figure>
+                <img class="width" src="images/diary.jpeg" alt="rock">
+                <figcaption style="margin-left: 85px;"><h4>Hardanger, Norway</h4></figcaption>
+            </figure>
+        </div>
+    </div>
+    
+</body>
+</html>
